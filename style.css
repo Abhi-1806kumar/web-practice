@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    box-sizing: border-box;
+}
+
+.hero{
+    width:100%;
+    height:100vh;
+    background-image:  url(back1.jpg);
+    
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group{
+    margin-bottom: 30px; 
+    position:relative;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 2px solid rgb(0, 0, 0);
+    
+    color: rgb(255, 255, 255);
+    background:transparent;
+    
+    font-size: 15px;
+
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    padding:10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    width:100%;
+    cursor: pointer;
+    
+}
+
+input:focus~label,input:valid~label,input:focus~textarea,input:valid~textarea{
+    top: -35px;
+    font-size: 14px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.row .input-group{
+    flex-basis: 48%;
+}
+
